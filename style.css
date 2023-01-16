@@ -9,6 +9,7 @@
     transition: all .2s linear;
     text-decoration: none;
     text-transform: capitalize;
+    color: white;
     outline: none;
     margin: 0;
     padding: 0;
@@ -42,7 +43,8 @@ width: 10px;
     
 }
 .header img{
-    width: 90px;
+    width: 50%;
+    height: 100%
 }
 .icons div{
     margin-left: 1rem;
@@ -54,14 +56,21 @@ width: 10px;
     color: var(--maincolor);
 }
 .navbar.active{
-left: 0;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    right: 30%;
+    width: 30%;
+    height: 100vh;
+    background: var(--maincolor);
+    text-align: center;
 }
 .navbar{
     position: absolute;
     top: 100%;
-    left: -100%;
-    right: 0;
-    width: 100%;
+    left: 100%;
+    right: 30%;
+    width: 30%;
     height: 100vh;
     background: var(--maincolor);
     text-align: center;
@@ -132,10 +141,51 @@ form input{
     letter-spacing: 5px;
     border-radius: 15px;
 }
+
+.mission{
+    background: url(images/Alameda__3091.jpeg) var(--maincolor);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: .3rem 7%;
+}
+
+.mission-background-content h1{
+    color: white;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 400px;
+}
+
+.mission-headings{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.dance-headings p{
+    color: white;
+}
+
+.highlights{
+    background: url(images/2018\ Spotlight\ Junior_2.jpeg) var(--maincolor);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 3rem 7%;
+}
+
+.highlights-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .main-dance{
     background: url(images/Shape.png) var(--maincolor);
  
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem 7%;
 }
@@ -154,7 +204,7 @@ form input{
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
-.mian-dance-inner{
+.main-dance-inner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +345,7 @@ form input{
     letter-spacing: 3px;
     border-radius: 15px;
 }
-.subscribe{
+.contactinfo{
     background: url(images/subscribe.png) var(--maincolor);
     background-size: cover;
     background-repeat: no-repeat;
@@ -307,38 +357,38 @@ form input{
     align-items: center;
     text-align: center;
 }
-.subscribe-content{
+.contactinfo-content{
     width: 50%;
 }
-.subscribe-content h1{
+.contactinfo-content h1{
     color: white;
-    font-size: 50px;
+    font-size: 25%;
 
 }
-.subscribe-content p{
+.contactinfo-content p{
     color: white;
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin-bottom: 20px;
 }
-.subscribe-content .myform{
+.contactinfo-content .myform{
     width: 100%;
 }
-.subscribe-content .myform input{
+.contactinfo-content .myform input{
     width: 70%;
     padding: 1rem 2rem;
     border-radius: 15px;
     margin-bottom: 20px;
     border: 0;
 }
-.subscribe-content .myform span{
+.contactinfo-content .myform span{
     padding: 1rem 2rem;
     background: var(--seondcolor);
     color: white;
     font-size: 1.4rem;
     cursor: pointer;
 }
-.subscribe-content .myform span:hover{
+.contactinfo-content .myform span:hover{
     letter-spacing: 3px;
 }
 
